@@ -905,7 +905,7 @@
     minutes = document.getElementById('minutes').value;
 
     if (isNaN(minutes)) {
-      alert('Uniquement les minutes!');
+      alert('&#128071; Uniquement les minutes! &#128071;');
     }
 
     secondsRemaining = minutes * 60;
@@ -921,11 +921,12 @@
     inputMinutesThink = document.createElement('input');
     inputMinutesThink.setAttribute('id', 'minutes');
     inputMinutesThink.setAttribute('type', 'text');
+    inputMinutesThink.setAttribute('value', '31');
 
     startButton = document.createElement('input');
     startButton.setAttribute('type', 'button');
     startButton.setAttribute('id', 'start');
-    startButton.setAttribute('value', 'Start');
+    startButton.setAttribute('value', 'START');
 
     startButton.onclick = function() {
       return startCountdown();
