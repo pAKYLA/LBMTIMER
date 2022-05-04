@@ -905,7 +905,7 @@
     minutes = document.getElementById('minutes').value;
 
     if (isNaN(minutes)) {
-      alert('&#128071; Uniquement les minutes! &#128071;');
+      alert('Uniquement les minutes!');
     }
 
     secondsRemaining = minutes * 60;
