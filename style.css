@@ -26,7 +26,8 @@
 }
 
 #time {
-  font-size: 150px;
+  font-size: 250px;
+  line-height: 0.50px;	
 }
 
 #respawn {
