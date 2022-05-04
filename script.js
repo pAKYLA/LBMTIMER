@@ -921,6 +921,7 @@
     inputMinutesThink = document.createElement('input');
     inputMinutesThink.setAttribute('id', 'minutes');
     inputMinutesThink.setAttribute('type', 'text');
+    inputMinutesThink.setAttribute('value', '31');	  
 
     startButton = document.createElement('input');
     startButton.setAttribute('type', 'button');
