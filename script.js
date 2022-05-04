@@ -32,7 +32,6 @@
  
     if (min < 1 && sec <= 10) {
       timeDisplay.style.color = 'red';
-	  document.getElementById('respawn10').play();
     }
 	
 	
