@@ -38,6 +38,7 @@ img {
 width : 50px;
 position:fixed;
 bottom:1%;
+left:1%;
 }
 body {
   /* Location of the image */
