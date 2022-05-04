@@ -31,7 +31,8 @@
 }
 
 #respawn {
-  font-size: 30px;
+  font-size: 100px;
+  line-height: 0.50px;
 }
 body {
   /* Location of the image */
