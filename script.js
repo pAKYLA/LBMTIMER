@@ -936,7 +936,32 @@
     return document.getElementById('inputArea').appendChild(startButton);
   };
 
+  $("#volume-control").slider({
+  	min: 1,
+  	max: 100,
+  	value: 50,
+		range: "min",
+  	slide: function(event, ui) {
+    	setVolume(ui.value / 100);
+  	}
+	});
+	
+	var myMedia = document.createElement('audio');
+	$('#player').append(myMedia);
+	myMedia.id = "myMedia";
 
+	playAudio('respawnnow.mp3','respawn10.mp3' );
+	
+	function playAudio(fileName, myVolume) {
+			myMedia.src = fileName;
+			myMedia.setAttribute('loop', 'loop');
+    	setVolume(myVolume);
+    	myMedia.play();
+	}
+	
+	function setVolume(myVolume) {
+    var myMedia = document.getElementById('myMedia');
+    myMedia.volume = myVolume;
+	}
 
 }).call(this);
-
